@@ -1,0 +1,40 @@
+package Week3day1;
+
+public class MobilePhone{
+	
+public void sendMsg() {
+	System.out.println("Receiving msg");
+	
+}
+public void makeCall() {
+	System.out.println("Making call");
+}
+public void saveContact() {
+	System.out.println("Save my contacts");
+}
+}
+public class AndroidPhone extends MobilePhone{
+	public void takeVideo()
+	{
+		System.out.println("Making video");
+		}
+package Week3day1;
+
+public class SmartPhone extends AndroidPhone{
+	public void connectWhatsapp()
+	{
+		System.out.println("connecting the whatsapp");
+	}
+	public void takeVideo()
+	{
+		System.out.println("Make video");
+		}
+	public static void main(String[] args) {
+		SmartPhone ap=new SmartPhone();
+		ap.sendMsg();
+		ap.makeCall();
+		ap.saveContact();
+		ap.takeVideo();
+		ap.connectWhatsapp();
+}
+}
