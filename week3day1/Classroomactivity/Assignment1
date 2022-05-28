@@ -1,0 +1,25 @@
+package org.system;
+
+public class Computer {
+  
+	public void ComputerModel() 
+	{
+	System.out.println("Smart Station 9530 MINI PC Desktop");
+ }
+}
+
+
+
+package org.system;
+
+public class Desktop extends Computer{
+ public void desktopSize() {
+	 System.out.println("W640xH480");
+ }
+	public static void main(String[] args) {
+		Desktop dc=new Desktop();
+	    dc.ComputerModel();	
+		dc.desktopSize();
+	}
+
+}
