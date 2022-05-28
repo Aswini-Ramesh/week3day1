@@ -1,0 +1,44 @@
+package Week3day1;
+
+public class Students {
+private String studentId1;
+
+public void getStudentInfo(int studentId) {
+	System.out.println(studentId);
+	}
+	
+	public void getStudentInfo(String studentName) {
+    	System.out.println(studentName);
+	}
+	
+	public void getStudentInfo(int studentId1, String studentName) {
+		int c=studentId1;
+		String d=studentName;
+		System.out.println(c);
+		System.out.println(d);
+	}
+	
+	public void getStudentInfo(String studentName, int studentId3) {
+		String a=studentName;
+		int b=studentId3;
+		System.out.println(a);
+		System.out.println(b);
+	}
+	
+	public void getStudentInfo(String studentId4, String studentName1) {
+     String a=studentId4;
+     String b=studentName1;
+		System.out.println(a);
+		System.out.println(b);
+	}
+	
+	public static void main(String[] args) {
+		Students st=new Students();
+		st.getStudentInfo(142206);
+		st.getStudentInfo("Aswini");
+		st.getStudentInfo(120026, "Babu");
+		st.getStudentInfo("Sathish", 140336);
+		st.getStudentInfo("1222491", "Sanjay");
+	}
+
+}
